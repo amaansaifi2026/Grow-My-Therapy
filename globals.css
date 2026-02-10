@@ -1,0 +1,25 @@
+@import "tailwindcss";
+
+@theme {
+  /* Colors */
+  --color-accent: #c0845c;
+  --color-dark: #2f2926;
+  --color-lightbg: #f3efe9;
+  --color-textsoft: #6b645f;
+
+  /* Fonts */
+  --font-serif: var(--font-serif), ui-serif, Georgia, serif;
+  --font-sans: var(--font-sans), ui-sans-serif, system-ui, sans-serif;
+
+  /* Custom Radii & Shadows */
+  --radius-xl2: 28px;
+  --shadow-card: 0 10px 25px rgba(0, 0, 0, 0.05);
+}
+
+@layer base {
+  body {
+    background-color: var(--color-lightbg);
+    color: var(--color-dark);
+    @apply antialiased;
+  }
+}
